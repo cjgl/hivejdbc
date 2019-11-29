@@ -21,7 +21,7 @@ public class HiveJdbcClient {
 			e.printStackTrace();
 			System.exit(1);
 		}
-		Connection con = DriverManager.getConnection("jdbc:hive2://172.16.1.81:10000/default", "", "");
+		Connection con = DriverManager.getConnection("jdbc:hive2://172.16.1.81:10000/default", "root", "");
 		Statement stmt = con.createStatement();
 		String tableName = "testHiveDriverTable";
 		// stmt.executeQuery("drop table if exists " + tableName);

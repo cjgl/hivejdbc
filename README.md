@@ -17,3 +17,9 @@
 
 ##### 插入数据
 	insert into studenttable(name,sex,age) values('Jack','0','20');
+	
+# hadoop命令
+	# 更改所有者
+	sudo -u hdfs hadoop fs -chown root /user/hive/warehouse/path_to_file
+	# 删除目录或文件
+	hadoop fs -rm -r -skipTrash /path_to_file/file_name
